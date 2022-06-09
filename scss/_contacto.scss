@@ -1,0 +1,60 @@
+.img-pesadote {
+    width: 2.5rem;
+}
+
+.textoChico {
+    font-size: 0.9rem;
+}
+
+.icono {
+    display: inline-flex;
+    opacity: 0;
+}
+
+.bg-mio {
+    background-color: $gris;
+}
+
+.inputAnimado {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    input {
+        padding: 10px;
+        border-radius: 4px;
+        &::placeholder {
+            transition: opacity .25s;
+        }
+        &:focus
+            &::placeholder {
+                opacity: 0;
+            }
+            &+label {
+            transform: translateX(26px);
+                & .icono {
+                    opacity: 1;
+                    transition-delay: .1s;
+                }
+        }
+    }
+}
+label {
+    position: relative;
+    right: 2rem;
+    align-items: center;
+    transition: transform .25s, opacity .25s;
+}
+
+/* PC  */
+@media only screen and (min-width:1401px){
+
+    hr {
+        display: block;
+        width: 20%;
+        margin: auto;
+    }
+
+}
+

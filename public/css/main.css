@@ -1,0 +1,84 @@
+main > * {
+  margin: 15vh 0vw; }
+
+main > :nth-child(even) {
+  background-color: #6980A22B; }
+
+header {
+  background: url("../assets/img/fondoHero.jpg"); }
+
+.hero__texto--titulo {
+  font-size: 3rem;
+  color: white; }
+
+.logo {
+  width: 70%; }
+
+hr {
+  display: none;
+  transition: width 1s; }
+
+.nav-link:hover + hr {
+  width: 85%; }
+
+.img-pesadote {
+  width: 2.5rem; }
+
+.textoChico {
+  font-size: 0.9rem; }
+
+.icono {
+  display: inline-flex;
+  opacity: 0; }
+
+.bg-mio {
+  background-color: #6980A22B; }
+
+.inputAnimado {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center; }
+  .inputAnimado input {
+    padding: 10px;
+    border-radius: 4px; }
+    .inputAnimado input::placeholder {
+      transition: opacity .25s; }
+    .inputAnimado input:focus .inputAnimado input::placeholder {
+      opacity: 0; }
+    .inputAnimado input + label {
+      transform: translateX(26px); }
+      .inputAnimado input + label .icono {
+        opacity: 1;
+        transition-delay: .1s; }
+
+label {
+  position: relative;
+  right: 2rem;
+  align-items: center;
+  transition: transform .25s, opacity .25s; }
+
+/* PC  */
+@media only screen and (min-width: 1401px) {
+  hr {
+    display: block;
+    width: 20%;
+    margin: auto; } }
+
+.flexcentrar {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.centrarTodo {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .centrarTodo * {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+header {
+  background: url("../../assets/img/fondoHero.jpg"); }

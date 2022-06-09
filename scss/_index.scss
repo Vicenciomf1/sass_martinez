@@ -1,0 +1,25 @@
+main {
+    &>* {
+        margin: $margenGrande;
+    }
+    & > :nth-child(even){
+        background-color: $gris;
+    }
+}
+header {
+    background: url("../assets/img/fondoHero.jpg");
+}
+.hero__texto--titulo {
+    font-size: 3rem;
+    color: white;
+}
+.logo {
+    width: 70%;
+}
+hr {
+    display: none;
+    transition: width 1s;
+}
+.nav-link:hover+hr{
+    width: 85%;
+}

@@ -1,0 +1,23 @@
+@import "./variables";
+@import "./index";
+@import "./contacto";
+
+.flexcentrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centrarTodo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & * {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+header {
+    background: $heroLink;
+}
